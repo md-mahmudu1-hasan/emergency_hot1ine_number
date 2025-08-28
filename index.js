@@ -23,7 +23,7 @@ function callbuttonEvent(id, numberID, tagid) {
     let accessTag = document.getElementById(tagid).innerText;
     let accessCoin = document.getElementById("coin-count").innerText;
     if (accessCoin < 20) {
-      alert("You have no coin");
+      alert("You have not enough coin");
     } else {
       accessCoin -= 20;
       document.getElementById("coin-count").innerText = accessCoin;
@@ -67,15 +67,15 @@ callbuttonEvent("call8", "number8", "tag8");
 callbuttonEvent("call9", "number9", "tag9");
 
 //copy button
-function copyButtonEvent(id , numberID){
-    let countcopy = 0;
-    accessCallButton(id).addEventListener("click", function () {
-        let accessNumber = document.getElementById(numberID).innerText;
-        navigator.clipboard.writeText(accessNumber);
-        alert("Copied to clipboard");
-        countcopy++;
-        document.getElementById("copy-count-number").innerText = countcopy;
-    })
+function copyButtonEvent(id, numberID) {
+  let countcopy = 0;
+  accessCallButton(id).addEventListener("click", function () {
+    let accessNumber = document.getElementById(numberID).innerText;
+    navigator.clipboard.writeText(accessNumber);
+    alert("Copied to clipboard");
+    countcopy++;
+    document.getElementById("copy-count-number").innerText = countcopy;
+  });
 }
 copyButtonEvent("copy1", "number1");
 copyButtonEvent("copy2", "number2");
@@ -86,4 +86,3 @@ copyButtonEvent("copy6", "number6");
 copyButtonEvent("copy7", "number7");
 copyButtonEvent("copy8", "number8");
 copyButtonEvent("copy9", "number9");
-
