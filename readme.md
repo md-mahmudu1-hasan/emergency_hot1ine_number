@@ -31,5 +31,6 @@ Its usefull because it allows us to handle events on multiple elements without h
 5 No answer:
 ------------
 preventDefault() is a method in JavaScript that is used to prevent the default action of an event from occurring.
+--
 stopPropagation() is a method in JavaScript that is used to stop the event from propagating to other elements.Its stops the event from bubbling up or propagating to parent elements.
 
