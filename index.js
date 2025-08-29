@@ -72,7 +72,7 @@ function copyButtonEvent(id, numberID) {
   accessCallButton(id).addEventListener("click", function () {
     let accessNumber = document.getElementById(numberID).innerText;
     navigator.clipboard.writeText(accessNumber);
-    alert("Copied to clipboard");
+    alert(`Copied to clipboard : ${accessNumber}`);
     countcopy++;
     document.getElementById("copy-count-number").innerText = countcopy;
   });
