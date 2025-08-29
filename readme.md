@@ -24,7 +24,7 @@ Event bubbling is the process of an event in the DOM where when an event occurs 
 
 4 No answer:
 ------------
-Event Delegation is a powerful technique in JavaScript where we apply event handlers to many child elements at once, instead of their parent element.
+Event Delegation in JavaScript is a technique where instead of adding event listeners to many individual child elements, we add a single event listener to a parent element. It is a powerful technique in JavaScript where we apply event handlers to many child elements at once.
 
 Its usefull because it allows us to handle events on multiple elements without having to add an event listener to each element.
 
